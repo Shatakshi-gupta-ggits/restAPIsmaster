@@ -2,7 +2,10 @@ import { config as conf } from 'dotenv'
 conf();
 const _config = {
     port: process.env.PORT,
-    apikey: ''
+   // apikey: '',
+    databaseUrl: process.env.MONGO_CONNECTION_STRING,
+
+    env: process.env.NODE_ENV,
 };
 
 
